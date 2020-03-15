@@ -29,7 +29,7 @@ export default class ActorComp extends Component {
             {fullName}
           </a>
           <div className="actor-bday">
-            Birthday: {data.birthday} <br></br>(Age: {data.getAge})
+            Birthday: {data.birthday} <br></br>(Age: {data.age})
           </div>
         </div>
       </div>

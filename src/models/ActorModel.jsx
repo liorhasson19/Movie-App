@@ -3,16 +3,14 @@ export default class ActorModel {
     this.id = actor.id;
     this.fName = actor.fName;
     this.lName = actor.lName;
-    // this.birthday = actor.birthday;
     this.birthday = actor.birthday;
     this.imageUrl = actor.imageUrl;
     this.imdbLink = actor.imdbLink;
-    // this.getAge = getAge(actor.birthday);
+    this.age = this.getAge(actor.birthday);
   }
-  getAge() {
-    let birthYear = new Date(this.birthday).getFullYear();
+  getAge(birthday) {
+    let birthYear = new Date(birthday).getFullYear();
     let currentYear = new Date().getFullYear();
-
     return currentYear - birthYear;
   }
 }
