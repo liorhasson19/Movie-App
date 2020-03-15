@@ -1,0 +1,19 @@
+.movie-search-box {
+    position: relative;
+}
+
+.movie-search-box>.movie-search-results {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.moviesearchbox-input {
+    width: 98%;
+    height: 4em;
+    margin: 2em 0.5em;
+    padding: .5em;
+    background-color: lightgray;
+    border-color: #585753;
+    border-radius: .3em;
+}

@@ -1,0 +1,40 @@
+.actor-col {
+    margin: auto;
+}
+
+.actor-card {
+    border: 1px solid #585753;
+    margin: 0px 10px 20px 10px;
+    border-radius: .6em;
+    box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+.actor-img {
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+    background-color: #585753;
+}
+
+img {
+    border-top-left-radius: .6em;
+    border-top-right-radius: .6em;
+}
+
+.actor-details {
+    background-color: #585753;
+    border-bottom-left-radius: .6em;
+    border-bottom-right-radius: .6em;
+    padding: 5px 0 10px 0;
+}
+
+.actor-name {
+    background-color: #585753;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #F5C518;
+}
+
+.actor-bday {
+    color: white;
+    padding: 5px 0;
+}

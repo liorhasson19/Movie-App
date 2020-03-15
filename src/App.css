@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+.App {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #585753;
+  color: #F5C518;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.accordion {
+  margin: auto;
+  width: 100%;
+  margin: 0 0.5em;
+  /* padding: .5em; */
+}
