@@ -3,6 +3,7 @@ import MovieSearchBox from "../components/SearchBox/MovieSearchBox";
 import { Container, Row, Col } from "react-bootstrap";
 import MovieComp from "../components/MovieComp/MovieComp";
 import MovieModel from "../models/MovieModel";
+import "./MovieGallery.css";
 import Axios from "axios";
 
 export default class MoviesPage extends Component {
@@ -70,7 +71,7 @@ export default class MoviesPage extends Component {
     for (let i = 0; i < promises[0].data.crew.length; i++) {
       if (promises[0].data.crew[i].department === "Directing") {
         //director.replace(".", "  , ");
-        director = promises[0].data.crew[i].name + " .";
+        director = promises[0].data.crew[i].name;
         break;
       }
     }
@@ -104,15 +105,15 @@ export default class MoviesPage extends Component {
 
     return (
       <div>
-        <Container>
+        <div>
           <MovieSearchBox
-            searchPlaceholder="Search Movie"
+            searchPlaceholder="Search for a movie by title"
             results={movieSearchResultStrings}
             onSearchChange={this.searchMovies}
             onSelectedResult={this.addMovie}
           />
-          <Row>{movieComp}</Row>
-        </Container>
+          <div className="movie-gallery">{movieComp}</div>
+        </div>
       </div>
     );
   }

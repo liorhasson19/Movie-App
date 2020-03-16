@@ -1,0 +1,21 @@
+.movie-card {
+    width: 200px;
+    text-align: start;
+    border: 1px solid #585753;
+    margin: 0px 10px 20px 10px;
+    border-radius: .6em;
+    box-shadow: 7px 7px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+.movie-poster {
+    width: 100%;
+}
+
+.titles {
+    font-weight: bold;
+}
+
+.card-details {
+    padding: 10px;
+    height: 180px;
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
-// import "./MovieComp.css";
+import "./MovieComp.css";
 
 // Props
 // actor. an instance of ActorModel
@@ -14,28 +14,30 @@ export default class MovieComp extends Component {
 
     return (
       <div>
-        <Card>
-          <Card.Img variant="top" src={movie.posterURL} />
-          <Card.Body>
-            <Card.Title>
-              <span className="titles">Title : </span>
-              {"  " + movie.title},
+        <div className="movie-card">
+          <img
+            className="movie-poster"
+            src={movie.posterURL}
+            alt="Movie_Poster"
+          />
+
+          <div>
+            <div className="card-details">
+              <span className="titles">Title:</span>
+              {" " + movie.title}
               <br />
-              <span className="titles">Length :</span>{" "}
-              {"  " + movie.runtime + " "} minutes,
-              <br /> <span className="titles">Actor 1st :</span>
-              {"  " + movie.firstMainStars}, <br />
-              <span className="titles">Actor 2nd :</span>
-              {"  " + movie.secondMainStars}
+              <span className="titles">Length:</span>
+              {" " + movie.runtime + " "} minutes
               <br />
-              <span className="titles"> Actor 3th :</span>
-              {"  " + movie.thirdMainStars}.
+              <span className="titles">Director:</span>
+              {" " + movie.director}
               <br />
-              <span className="titles">Director :</span>
-              {"  " + movie.director}
-            </Card.Title>
-          </Card.Body>
-        </Card>
+              <span className="titles">Actors:</span>
+              {" " + movie.firstMainStars} {", " + movie.secondMainStars}
+              {", " + movie.thirdMainStars}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
